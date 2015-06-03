@@ -8,27 +8,27 @@ using System.Diagnostics;
 namespace Day3_Labs
 {
 
-    public abstract class Employee
-    {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string ShowFullName()
-        {
-            return FirstName + " " + LastName;
+    //public abstract class Employee
+    //{
+    //    public string FirstName { get; set; }
+    //    public string LastName { get; set; }
+    //    public string ShowFullName()
+    //    {
+    //        return FirstName + " " + LastName;
 
-        }
-    }
+    //    }
+    //}
 
-    public class FullTimeEmployee: Employee
-    {
-        public int YearsEmployed { get; set; }
+    //public class FullTimeEmployee: Employee
+    //{
+    //    public int YearsEmployed { get; set; }
 
-    }
+    //}
 
-    public class ContractEmployee: Employee
-    {
-        public int MonthsEmployed { get; set; }
-    }
+    //public class ContractEmployee: Employee
+    //{
+    //    public int MonthsEmployed { get; set; }
+    //}
 
 
 
@@ -38,18 +38,18 @@ namespace Day3_Labs
     {
 
 
-        static void ShowEmployee(Employee employee)
-        {
-            Console.WriteLine(employee.FirstName);
-            if (employee is FullTimeEmployee) {
-            var fullTimeEmployee = employee as FullTimeEmployee;
-                Console.WriteLine(fullTimeEmployee.YearsEmployed);
-            }
+        //static void ShowEmployee(Employee employee)
+        //{
+        //    Console.WriteLine(employee.FirstName);
+        //    if (employee is FullTimeEmployee) {
+        //    var fullTimeEmployee = employee as FullTimeEmployee;
+        //        Console.WriteLine(fullTimeEmployee.YearsEmployed);
+        //    }
 
-            else if (employee is ContractEmployee) {
-                var contractEmployee = employee as ContractEmployee;
-                Console.WriteLine(contractEmployee.MonthsEmployed);
-            }
+        //    else if (employee is ContractEmployee) {
+        //        var contractEmployee = employee as ContractEmployee;
+        //        Console.WriteLine(contractEmployee.MonthsEmployed);
+        //    }
 
 
         }
@@ -64,29 +64,37 @@ namespace Day3_Labs
 
 
 
-            var fullTimeEmployee = new FullTimeEmployee
-            {
-                FirstName = "Bill",
-                LastName = "Gates",
-                YearsEmployed = 3,
+            //var fullTimeEmployee = new FullTimeEmployee
+            //{
+            //    FirstName = "Bill",
+            //    LastName = "Gates",
+            //    YearsEmployed = 3,
              
                 
-            };
+            //};
 
-            var contractEmployee = new ContractEmployee
-            {
-                FirstName = "Stephen",
-                LastName = "Walther",
-                MonthsEmployed = 58
-            };
-
-
+            //var contractEmployee = new ContractEmployee
+            //{
+            //    FirstName = "Stephen",
+            //    LastName = "Walther",
+            //    MonthsEmployed = 58
+            //};
 
 
 
 
-            Debug.Assert(fullTimeEmployee.ShowFullName() == "Bill Gates", "Bill is Not Here");
+
+
+            //Debug.Assert(fullTimeEmployee.ShowFullName() == "Bill Gates", "Bill is Not Here");
+
+    var eagle1 = new Eagle
+        {
+            Name = "HowardTheDuck",
+            MakeSound()
+        };
+
+    Console.WriteLine(?????);
 
         }
     }
-}
+

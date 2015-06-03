@@ -84,3 +84,73 @@ namespace Day3
         }
     }
 }
+
+
+
+
+
+    namespace Day3
+{
+
+
+
+    public class NewCar : ICar
+    {
+        public string Model { get; set; }
+        public string Price { get; set; }
+    }
+
+    public class UsedCar: ICar
+    {
+        public string Model { get; set; }
+       
+        public bool UnderWarranty { get; set; }
+
+
+        public string Price { get; set; }
+    }
+
+   
+
+
+    class Program
+    {
+
+        public static void DisplayCar(ICar car)
+        {
+            Console.WriteLine(car.Model);
+        }
+
+        public class Sorter : IComparer
+        {
+            private Random rnd = new Random();
+
+            public int Compare(object x, object y)
+            {
+                if (rnd.Next(2) == 1) {
+                    return -1;
+                }
+                else {
+                    return 1;
+                }
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            var colors = new string[] {
+                "yellow", "green", "blue"
+            };
+
+
+            Array.Sort(colors, new Sorter());
+
+            foreach (var color in colors) {
+                Console.WriteLine(color);
+            }
+
+            Console.ReadLine();
+
+        }
+    }
+}

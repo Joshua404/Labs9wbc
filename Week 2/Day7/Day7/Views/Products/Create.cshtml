@@ -1,0 +1,26 @@
+﻿@model Day7.Views.Products.CreateVM
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    <div>
+        @Html.LabelFor(m => m.Product.Category.Id, "Category:")
+        @Html.DropDownListFor(m=>m.Product.Category.Id, Model.Categories, "Pick Something")
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Product.Val1, "Val1:")
+        @Html.TextBoxFor(m => m.Product.Val1, new {@class="form-control"})
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Product.Val2, "Val2:")
+        @Html.TextBoxFor(m => m.Product.Val2)
+    </div>
+    
+    <input type="submit" value="Calculate" class="btn btn-danger"/>
+
+    @*@Html.DisplayTextFor(m => m.Val3)*@
+}

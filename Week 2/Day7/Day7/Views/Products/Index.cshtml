@@ -1,0 +1,16 @@
+﻿@model Day7.Views.Products.IndexVM 
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+    @foreach (var product in this.Model.Products)
+    //foreach (var product in this.ViewBag.Products)
+    //foreach (var product in (List<Day7.Models.Product>)this.ViewData["products"])
+    {
+        <li>@product.Name</li>
+        
+    }
+</ul>

@@ -1,0 +1,64 @@
+﻿@{
+    var products = new List<Product> {
+     new Product {Name = "Milk", Price=3.33m, OnSale = true},
+     new Product {Name="Eggs", Price=4.2m, OnSale = false},
+     new Product {Name="Butter", Price=2.1m, OnSale = true}
+    };
+}
+
+<h2>Index</h2>
+
+
+
+    @foreach (var product in products)
+    {
+        if (product.OnSale == true)
+        {
+            <div style="color: red;"> @product.Name for only @product.Price.ToString("c")!</div>
+        }
+        else
+        {
+            <div> @product.Name for only @product.Price.ToString("c")!</div>
+        }
+       @*<div> @product.Name for only @product.Price.ToString("c")!</div>
+            @if (product.Price < 4m) {
+                <text>On Sale!</text>
+            }*@
+        
+    }
+
+
+
+@*@foreach (var product in products)
+    {
+        if (product.Price < 4m)
+        {
+            <div style="background-color:red"></div>
+        }
+        else
+        {
+            <div></div>
+        }*@
+
+
+@*<ul>
+    @foreach (var product in products)
+    {
+        if (products.OnSale == true)
+        {
+
+        }
+        else
+        {
+
+        }
+        <li>
+            @product.Name @product.Price
+            @if (product.Price < 4m)
+            {
+                <text>On Sale!</text>
+            }
+        </li>
+    }
+
+</ul>*@

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace PersonalProjectv2.Models
 {
@@ -65,6 +66,23 @@ namespace PersonalProjectv2.Models
     public class RegisterViewModel
     {
         [Required]
+        [MinLength(4)]
+        [MaxLength(11)]
+        [Remote("ValidateUsername", "Events", ErrorMessage = "Allready Taken!", HttpMethod = "POST")]
+        public string Username { get; set; }
+
+        [Required]
+        [MinLength(2)]
+        [MaxLength(15)]
+        public string FirstName { get; set; }
+
+        [Required]
+        [MinLength(2)]
+        [MaxLength(15)]
+        public string LastName { get; set; }
+
+        
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
@@ -77,8 +95,14 @@ namespace PersonalProjectv2.Models
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [System.ComponentModel.DataAnnotations.Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Display(Name = "Comments")]
+        [MaxLength(50)]
+        public string Comments { get; set; }
+
+
     }
 
     public class ResetPasswordViewModel
@@ -96,7 +120,7 @@ namespace PersonalProjectv2.Models
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [System.ComponentModel.DataAnnotations.Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
         public string Code { get; set; }

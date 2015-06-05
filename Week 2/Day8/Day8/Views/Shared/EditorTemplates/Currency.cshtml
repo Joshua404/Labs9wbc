@@ -1,0 +1,10 @@
+﻿@model decimal?
+
+@*$ @Html.TextBox("", null, htmlAttributes: new {@class="form-control"})*@
+
+<div class="input-group">
+    <div class="input-group-addon">$</div>
+    @Html.TextBox("", null, htmlAttributes: new { @class = "form-control", placeholder = "amount", type = "number" })
+    @*<div class="input-group-addon">.00</div>*@
+</div>
+

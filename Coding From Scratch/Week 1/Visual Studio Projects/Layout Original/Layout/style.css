@@ -1,0 +1,89 @@
+﻿* {
+    /*universal selector clears format when the page loads
+        other selector targeting override universal selector*/
+
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Target by html tag*/
+body {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-right: 5%;
+    margin-left: 5%;
+    display: inline;
+}
+td {
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: yellow;
+}
+/*end target by html tag*/
+
+/*target by id*/
+#divNavBar {
+    width: 100%;
+    background-color: #d83535;
+    color: white; 
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: fixed;
+}
+#divSectionOne {
+    color: #d83535;
+    width: 100%;
+    padding-top: 50px;
+}
+#divSectionTwo {
+    background-color: blue;
+    width: 100%;
+}
+ /*end target by id*/
+
+ /*target by class*/
+ .jg-center {
+     margin: auto;
+     width: 1000px;
+ }
+ .jg-inline-block {
+     width: 450px;
+     display: inline-block;
+     vertical-align: text-top;
+ }
+ .jg-float-left {
+     float: left;
+ }
+ .jg-float-right {
+     float: right;
+ }
+ .jg-green-gray {
+     background-color: yellow;
+ }
+ /*end target by class*/
+
+ /*misc*/
+ .jg-center section {
+     margin: auto;
+     color: black;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     border-left: 2px solid black;
+     padding-left: 15px;
+     text-align: justify;
+ }
+
+ /*end misc*/
+ 

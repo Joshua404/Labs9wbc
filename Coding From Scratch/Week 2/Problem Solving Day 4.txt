@@ -1,0 +1,9 @@
+Define a power of 2
+1Even
+2 Is a number that satisfies log sub 2 y = x
+     2^x = y    "Logarithm?"
+3 Every number that does not satisfie 2^x where x is an integer is not a power of 2
+
+
+
+Returning to the user wether or not a number is a power of 2+

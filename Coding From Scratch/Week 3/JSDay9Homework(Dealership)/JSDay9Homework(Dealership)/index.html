@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Jakarta Dealership</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="modal fade" id="modalEdit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Editing</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <input id="editVehicleMake" name="editVehicleMake" placeholder="Vehicle Make">
+                        <input id="editVehicleModel" name="editVehicleModel" placeholder="Vehicle Model">
+                        <input id="editVehicleColor" name="editVehicleColor" placeholder="Vehicle Color">
+                        <select id="editVehicleType">
+                            <option value="Sedan">Sedan</option>
+                            <option value="Wagon">Wagon</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Coupe">Coupe</option>
+                            <option value="Hatchback">Hatchback</option>
+                            <option value="Van">Van</option>
+                            <option value="Pickup">Pickup</option>
+                        </select>
+                        <input id="editVehicleYear" name="editVehicleYear" placeholder="Vehicle Year">
+                        <select id="editVehicleTranny">
+                            <option value="Manual">Manual</option>
+                            <option value="Automatic">Automatic</option>
+                        </select>
+                        <select id="editVehicleDrive">
+                            <option value="AWD">AWD</option>
+                            <option value="4WD">4WD</option>
+                            <option value="FWD">FWD</option>
+                            <option value="RWD">RWD</option>
+                        </select>
+                        <select id="editVehicleCondition">
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Poor">Poor</option>
+                        </select>
+                        <input id="editURL" name="editURL" placeholder="Picture URL">
+                        <input type="button" id="editButton" name="editButton" value="Save" />
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cb-clean-buff-top " data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <form class="container">
+
+        <input id="inputVehicleMake" name="inputVehicleMake" placeholder="Vehicle Make">
+        <input id="inputVehicleModel" name="inputVehicleModel" placeholder="Vehicle Model">
+        <input id="inputVehicleColor" name="inputVehicleColor" placeholder="Vehicle Color">
+        <select id="inputVehicleType">
+            <option value="Sedan">Sedan</option>
+            <option value="Wagon">Wagon</option>
+            <option value="SUV">SUV</option>
+            <option value="Coupe">Coupe</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Van">Van</option>
+            <option value="Pickup">Pickup</option>
+        </select>
+        <input id="inputVehicleYear" name="inputVehicleYear" placeholder="Vehicle Year">
+        <select id="inputVehicleTranny">
+            <option value="Manual">Manual</option>
+            <option value="Automatic">Automatic</option>
+        </select>
+        <select id="inputVehicleDrive">
+            <option value="AWD">AWD</option>
+            <option value="4WD">4WD</option>
+            <option value="FWD">FWD</option>
+            <option value="RWD">RWD</option>
+        </select>
+        <select id="inputVehicleCondition">
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+            <option value="Poor">Poor</option>
+        </select>
+        <input id="inputURL" name="inputURL" placeholder="Picture URL">
+        <input type="button" id="inputButton" name="inputButton" value="Add" />
+    </form>
+
+
+
+    <table id="tableDisplayInventory" class="container">
+        <thead>
+            <tr>
+                <th>Vehicle Make</th>
+                <th>Vehicle Model</th>
+                <th>Vehicle Color</th>
+                <th>Vehicle Type</th>
+                <th>Vehicle Year</th>
+                <th>Vehicle Tranny</th>
+                <th>Vehicle Drivetrain</th>
+                <th>Vehicle Condition</th>
+                <th>Picture URL</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbodyDisplayInventory"></tbody>
+    </table>
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>

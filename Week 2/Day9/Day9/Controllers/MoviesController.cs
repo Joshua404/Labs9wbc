@@ -36,6 +36,7 @@ namespace Day9.Controllers
 
         // POST: Movies/Create
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(Movie movie)
         {
             if (ModelState.IsValid) {

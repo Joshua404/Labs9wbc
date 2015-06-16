@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Avengers Form</title>
+</head>
+<body>
+    <div align="justify" style="padding-top: 10px; color: black">
+        <form>
+            <fieldset align="center" style="width: 30%">
+                <legend>Customer Registration</legend>
+                <br />
+                <label>Personal Info</label>
+                <br />
+                <input name="inputName" placeholder="Full Name">
+                <br />
+                <input name="inputEmailAddress" placeholder="Email Address">
+                <br />
+                <input name="inputphone" placeholder="Phone Number">
+                <br />
+                <input name="inputAddress" placeholder="Address">
+                <br />
+                <input name="inputCity" placeholder="City">
+                <br />
+                <input name="inputZip" placeholder="Zip">
+                <br />
+                <input name="inputState" placeholder="State">
+                <br />
+                <input name="inputCountry" placeholder="Country">
+                <br />
+                <br />
+                <label for="inputPassword">Please Choose Password</label>
+                <br />
+                <input type="password" name="inputPassword" placeholder="Choose Password" />
+                <br />
+                <input type="password" name="inputPasswordConfirm" placeholder="Confirm Password" />          
+                <br />
+                <label for="inputMarriage">Are You Married?</label>
+                <input type="checkbox" name=" inputMarriage" />
+                <table float>
+                    <tr>
+                        <td>
+                            <br />
+                            <label>Credit Card Info</label>
+                            <br />
+                            <input name="inputNameOnCard" placeholder="Name On Card" />
+                            <br />
+                            <input name="inputCreditCardNumber" placeholder="Credit Card Number" />
+                            <br />
+                            <label for="selectCreditCard">Select Card</label>
+                            <select name="selectCreditCard" style="width: 110px">
+                                <option value="MasterCard">MASTERCARD</option>
+                                <option value="VISA">VISA</option>
+                                <option value="AMEX">AMEX</option>
+                                <option value="DISCOVER">DISCOVER</option>
+                            </select>
+                            <br />
+                            <label for="inputExpDate">Exp Date</label>
+                            <input type="month" name="inputExpDate" placeholder="Exp Date" style="width: 145px" /> <!--type="date" only supported inert chrome-->
+                            <br />
+                            <input name="inputCvc" placeholder="CVC" style="width: 145px"/>
+                            <br />
+                            <label for="inputAut">
+                                Are We Authorized to Make
+                                <br />
+                                Rogue Transactions? :)
+                            </label>
+                            <br />
+                            <input type="checkbox" name="inputAut" />
+                            <br />
+                        </td>
+                        <td>
+                            <label>Billing Address</label>
+                            <br />
+                            <input name="inputAddress" placeholder="Address">
+                            <br />
+                            <input name="inputCity" placeholder="City">
+                            <br />
+                            <input name="inputZip" placeholder="Zip">
+                            <br />
+                            <input name="inputState" placeholder="State">
+                            <br />
+                            <input name="inputCountry" placeholder="Country">
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+                <textarea name="inputComments" placeholder="Comments"></textarea>
+                <br />
+                <button onclick="myFunction()">Give Your LIFE Up! :)</button>
+                <p id="Message"></p>
+
+                <script>
+                    function myFunction() {
+                        var x;
+                        if (confirm("Congradulations, you just sold your soul to the DEVIL! HAHA") == true) {
+                            x = "You pressed OK!";
+                        }
+                        document.getElementById("Message").innerHTML = x;
+                    }
+                </script>
+            </fieldset>
+        </form>
+    </div>
+
+
+</body>
+</html>

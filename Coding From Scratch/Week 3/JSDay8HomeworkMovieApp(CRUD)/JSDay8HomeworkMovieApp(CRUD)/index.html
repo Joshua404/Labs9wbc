@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>TDC Movies & Ratings</title>
+    <meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Optional theme -->
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Begin: Modal -->
+    <div class="modal fade" id="modalEdit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Editing</h4>
+                </div>
+                <div class="modal-body">
+                    <form name="form-modal">
+                        <input id="editMovieTitle" name="editMovieTitle" placeholder="Movie Title" />
+                        <input id="editMovieDirector" name="editMovieDirector" placeholder="Movie Director" />
+                        <input id="editYearReleased" name="editYearReleased" placeholder="Year Released" />
+                        <input id="editCriticRating" name="editCriticRating" placeholder="Critic Rating" />
+                        <input type="button" id="inputSubmit" value="Save" onclick="update(this.form)" />
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cb-clean-buff-top " data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- End: Modal -->
+    <!-- Begin: Form -->
+    <form class="container" name="form">
+        <input id="inputMovieTitle" name="inputMovieTitle" placeholder="Movie Title" />
+        <input id="inputMovieDirector" name="inputMovieDirector" placeholder="Movie Director" />
+        <input id="inputYearReleased" name="inputYearReleased" placeholder="Year Released" />
+        <input id="inputCriticRating" name="inputCriticRating" placeholder="Critic Rating" />
+        <input type="button" id="inputSubmit" value="Add Movie" onclick="create(this.form)" />
+    </form>
+    <!-- End: Form -->
+    <!-- Begin: Table -->
+    <table class="container" id="tableDisplayMovies">
+        <thead>
+            <tr>
+                <th>Movie Title</th>
+                <th>Movie Director</th>
+                <th>Year Released</th>
+                <th>Critic Rating</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyDisplayMovies">
+            <!-- User-generated data tables display here. -->
+        </tbody>
+    </table>
+    <!-- End: Table -->
+    <!-- Begin: Footer -->
+    <footer class="container">&#169 TDC 2015</footer>
+    <!-- End: Footer -->
+    <!-- Begin: Scripts Load -->
+    <script src="scripts/jquery-2.1.4.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="CRUD.js"></script>
+    <!-- End: Scripts Load -->
+</body>
+</html>

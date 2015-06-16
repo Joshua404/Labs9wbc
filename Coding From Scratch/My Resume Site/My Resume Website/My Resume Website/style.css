@@ -1,0 +1,43 @@
+﻿* {
+    font-size: 16pt;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+}
+
+.jg-float-right {
+    float: right
+}
+
+#menu a {
+    color: black;
+}
+
+#divMenu {
+    background-color: rgba(255, 255, 255, 0.8);
+    /*width: 100%;*/
+}
+#divMCS {
+    background-color: rgba(35, 62, 222,  0.6);
+    width: 100%;
+    color: black;
+}
+#divWorkHistory {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.81);
+    color: black;
+}
+#divContactMe {
+    background-color: rgba(211, 28, 28, 0.86);
+    width: 100%;
+    color: black;
+}
+h2 {
+    color: black;
+}
+p {
+    padding-left: 4%;
+}

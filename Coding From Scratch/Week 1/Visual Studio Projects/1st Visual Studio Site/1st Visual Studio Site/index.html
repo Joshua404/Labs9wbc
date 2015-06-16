@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Form Test</title>
+</head>
+<body>
+    <style type="text/css">
+        tr td {
+            border: 1px solid black;
+        }
+        tr th {
+                padding: 20px;
+                border: 1px solid black;
+        }
+        table {
+            border-collapse: collapse;
+        }
+      
+        </style>
+
+        <div>
+            <article align="center">
+                <section>
+                    <p>
+                        ASP.NET and C# is super cool & <span>really professional</span>
+                    </p>
+
+
+                </section>
+
+                <section>
+                    <p>
+                        This is the totally <em style="color: red">RANDOM & AWESOME</em> employee directory for some company
+                    </p>
+                </section>
+
+            </article>
+
+
+
+        </div>
+    <div>
+        <table align="center" style="width: 80%">
+            <thead style="color: green">
+                <tr>
+                    <th></th>
+                    <th>Employee Name</th>
+                    <th>Department</th>
+                    <th>Manager</th>
+                    <th>Yrs @ Company</th>
+                    <th>Age</th>
+                    <th>Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Employee 1</td>
+                    <td>John Adams</td>
+                    <td>Sales</td>
+                    <td>MR Smith</td>
+                    <td>4yrs</td>
+                    <td>27</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Employee 2</td>
+                    <td>Mark Ruffalo</td>
+                    <td>SMASHING</td>
+                    <td>Nick Furry</td>
+                    <td>7yrs</td>
+                    <td>34</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Employee 3</td>
+                    <td>Adam Levine</td>
+                    <td>Musician</td>
+                    <td>Pompous</td>
+                    <td>10yrs</td>
+                    <td>38</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Employee 4</td>
+                    <td>Phil Coulson</td>
+                    <td>Director</td>
+                    <td>NA</td>
+                    <td>20yrs</td>
+                    <td>42</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Employee 5</td>
+                    <td>Maria Hill</td>
+                    <td>High Level Operative</td>
+                    <td>Nick Furry</td>
+                    <td>7yrs</td>
+                    <td>36</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Employee 6</td>
+                    <td>Bick Mitchum</td>
+                    <td>Marketing</td>
+                    <td>Kevin Hart</td>
+                    <td>5yrs</td>
+                    <td>35</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Employee 7</td>
+                    <td>Ann Harson</td>
+                    <td>Financial</td>
+                    <td>Bernie Mac</td>
+                    <td>9yrs</td>
+                    <td>49</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div align="center" style="padding-top: 50px">
+        <form>
+            <fieldset align="center" style="width: 65%">
+                <legend>Employee Information</legend>
+                <input name="inputEmployeeName" placeholder="Employee Name">
+                <br />
+                <input name="inputDepartment" placeholder="Department Name">
+                <br />
+                <textarea name="inputEmployeeNotes" placeholder="Notes"></textarea>
+                <br />
+                <input type="password" name="inputPassword" placeholder="Choose Password"/>
+                <br />
+                <input type="password" name="inputPasswordConfirm" placeholder="Confirm Password"/>
+                <br />
+                <input type="date" name="inputDateAdded" placeholder="Date added"/> <!--type="date" only supported inert chrome-->
+                <br />
+                <input type="radio"/>
+                <br />
+                <label for="inputManager">Manager?</label>
+                <input type="checkbox" name=" inputManager"/>
+                <br />
+                <select name="selectEmployeeStatus">
+                    <option value="Contract">contract</option>
+
+                </select>
+                <br />
+                <input type="submit" name="inputSubmit" value="Try?" />
+                <button>Click Me!</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

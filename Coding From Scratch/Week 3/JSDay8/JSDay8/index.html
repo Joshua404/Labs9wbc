@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <!--Bootstrap-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    
+    <!--Custom css-->
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="modal fade" id="modalEdit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Editing</h4>
+                </div>
+                <div class="modal-body">
+                    <form name="form-modal">
+                        <input id="editEmployeeName" name="editEmployeeName" placeholder="Employee name" />
+                        <input id="editEmployeeDepartment" name="editEmployeeDepartment" placeholder="Employee department" />
+                        <input id="editEmployeeJobTitle" name="editEmployeeJobTitle" placeholder="Employee job title" />
+                        <input id="editEmployeeSalary" name="editEmployeeSalary" placeholder="Employee salary" />
+                        <input type="button" id="inputSubmit" value="Save" onclick="update(this.form)" />
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cb-clean-buff-top " data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+    <form>
+        <input id="inputEmployeeName" name="inputEmployeeName" placeholder="Employee Name"/>
+        <input id="inputEmployeeDepartment" name="inputEmployeeDepartment" placeholder="Employee Department"/>
+        <input id="inputEmployeeJobTitle" name="inputEmployeeJobTitle" placeholder="Employee  Job Title"/>
+        <input id="inputEmployeeSalary" name="inputEmployeeSalary" placeholder="Employee Salary"/>
+        <input type="button" id="inputSubmit" value="Add" onclick="create(this.form)" />
+    </form>
+
+    <table id="tableDisplayEmployees">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Title</th>
+                <th>Salary</th>
+            </tr>     
+        </thead>
+        <tbody id="tbodyDisplayEmployees">
+
+        </tbody>
+    </table>
+
+    <!--Librarys--> 
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="CRUD.js"></script>
+</body>
+</html>

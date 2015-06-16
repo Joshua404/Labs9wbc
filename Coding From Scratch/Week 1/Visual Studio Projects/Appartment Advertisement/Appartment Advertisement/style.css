@@ -1,0 +1,113 @@
+﻿* {
+    /*universal selector clears format when the page loads
+        other selector targeting override universal selector*/
+
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Target by html tag*/
+body {
+    width: 100%;
+   background: url(IMG_1431.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+td {
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: yellow;
+}
+img {
+    align-content:center;
+    width: 110%;
+}
+h1 {
+    padding-top: 70px;
+    color: white;
+    border: 1px solid black;
+    -webkit-text-stroke: 1px black;
+}
+footer {
+    color: white;
+}
+/*end target by html tag*/
+
+/*target by id*/
+#divNavBar {
+    width: 100%;
+    background-color: #757575;
+    color: white; 
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: fixed;
+}
+#divSectionOne {
+    color: #d83535;
+    width: 100%;
+    padding-top: 50px;
+    border-left: 2px solid black;
+}
+#divSectionTwo {
+    background-color: rgba(35, 62, 222,  0.6);
+    width: 100%;
+    color: white;
+}
+ /*end target by id*/
+
+ /*target by class*/
+ .jg-center {
+     margin: auto;
+     width: 1000px;
+ }
+ .jg-inline-block {
+     width: 450px;
+     display: inline-block;
+     vertical-align: text-top;
+ }
+ .jg-float-left {
+     float: left;
+ }
+ .jg-float-right {
+     float: right;
+ }
+ .pheader {
+     color: rgba(233, 19, 229, 0.96);
+     font-weight: 500;
+     font-size: 170%;
+     text-shadow: 1px 1px white;
+ }
+ .jg-liinline {
+     display: inline;
+ }
+ /*end target by class*/
+
+ /*misc*/
+ .jg-center section {
+     margin: auto;
+     color: white;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     padding-left: 45px;
+     text-align: justify;
+ }
+
+ /*end misc*/
+ 

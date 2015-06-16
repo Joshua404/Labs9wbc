@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="modal fade" id="modalEdit">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Editing</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input id="editProductName" name="editProductName" placeholder="Product Name">
+                        <input id="editUnityQuantity" name="editUnityQuantity" placeholder="Units In Stock">
+                        <select id="editType">
+                            <option value="Food">Food</option>
+                            <option value="Beverage">Beverage</option>
+                            <option value="Misc">Misc</option>
+                        </select>
+                        <input type="button" id="editButton" name="editButton" value="Save" />
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cb-clean-buff-top " data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <form>
+
+        <input id="inputProductName" name="inputProductName" placeholder="Product Name">
+        <input id="inputUnityQuantity" name="inputUnityQuantity" placeholder="Units In Stock">
+         <select id="selectType">
+             <option value="Food">Food</option>
+             <option value="Beverage">Beverage</option>
+             <option value="Misc">Misc</option>
+         </select>
+        <input type="button" id="inputButton" name="inputButton" value="Add"/>
+    </form>
+
+    <table id="tableDisplayInventory">
+        <thead>
+            <tr>
+                <th>Product name</th>
+                <th>Units in stock</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbodyDisplayInventory">
+
+
+        </tbody>
+    </table>
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="js.js"></script>
+
+</body>
+</html>

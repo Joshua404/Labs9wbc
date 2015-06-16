@@ -1,0 +1,54 @@
+﻿/*begin id*/
+#divOne {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#divOne:hover {
+    background-color: #ff6a00;
+
+    -webkit-transform: /*rotate(90deg)*/ scale(1.15) /*skew(45deg, -45deg)*/ /*translate(300px)*/;
+    -moz-transform:    /*rotate(90deg)*/ scale(1.15) /*skew(45deg, -45deg)*/ /*translate(300px)*/;
+    -o-transform:      /*rotate(90deg)*/ scale(1.15) /*skew(45deg, -45deg)*/ /*translate(300px)*/;
+    transform:         /*rotate(90deg)*/ scale(1.15) /*skew(45deg, -45deg)*/ /*translate(300px)*/;
+}
+#divTwo,
+#divThree,
+#divFour {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+@-webkit-keyframes doStuff { /*google chrome, ie*/
+    /*keyframes define our animation journey
+        we drfine our starting point and what the starting point does
+        we define our end point and what the end point does*/
+   
+    0% {background-color: blue;} /*d start point*/
+    50% {background-color: green; border-radius: 30px;}
+    100% {background-color: orange;} /*d end point*/
+}
+
+@-webkit-keyframes doCrazyStuff {
+    0% {background-color: white;}
+    25%{background-color: green; -webkit-transform: translate(500px);}
+    50%{background-color: orange; -webkit-transform: translateY(400px);}
+    75%{background-color: rgba(255, 117, 0, 0.82); -webkit-transform: rotate(180deg)}
+    100%{background-color: red; border-radius: 50%;}
+}
+
+#divTwo:hover {
+    -webkit-animation: doStuff 7s;
+}
+
+#divThree:hover {
+    -webkit-animation: doCrazyStuff 10s infinite alternate;
+}

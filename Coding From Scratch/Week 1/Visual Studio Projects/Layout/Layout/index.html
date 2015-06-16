@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Layout Demo</title>
+    <!--Third party libraries should load first 99% of the time-->
+    <!--<link href="Content/bootstrap.min.css" rel="stylesheet" />-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link href="Content/space-theme.css" rel="stylesheet" />
+
+    <!--Custom CSS-->
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="divModal" class="modal fade"> <!--outer modal wrapper-->
+        <div class="modal-dialog"> <!--modal dialog wrapper-->
+            <div class="modal-content"> <!--modal content wrapper-->
+                <div class="modal-header"> <!--header-->
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">
+                        Welcome to your first modal!
+                    </h4>
+                </div>
+                <div class="modal-body"> <!--body-->
+                    This is your modal :D
+                </div>
+                <div class="modal-footer"> <!--footer-->
+                    <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="divNavBar" class="container">
+        <!--begin navigation menu-->
+        <div id="divMenu" class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="btn btn-success navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+
+                <div id="divLogo">
+                    <h2>LOGO</h2>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-center">
+                    <li class="nav">
+                        <a href="#divSectionOne">Section One</a>
+                    </li>
+                    <li class="nav">
+                        <a href="#divSectionTwo">Section Two</a>
+                    </li>
+                    <li class="nav">
+                        <a href="#divSectionThree">Section Three</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> <!--end navigation menu-->
+
+    <div id="divSectionOne" class="container-fluid">
+        <!--begin section one-->
+        <article class="jg-center">
+            <section>
+                This is some jibberish, oooh yaaa!!!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed ex hendrerit, mollis lacus sed, vestibulum 
+                odio. Donec id dignissim est. Suspendisse vitae dapibus libero. Suspendisse id urna dui. Praesent ac metus pharetra, 
+                lacinia purus id, volutpat ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque porta 
+                turpis a massa viverra venenatis. Suspendisse id nisl et libero lacinia congue. Donec metus elit, placerat et purus 
+                eu, tempor ultricies quam. Cras ultricies elit quis odio tincidunt, ac auctor metus consectetur. Aliquam tempus magna 
+                eu condimentum luctus. Curabitur placerat sapien felis, non sodales eros consectetur eget.
+            </section>
+        </article>
+    </div> <!--end section one-->
+    <br />
+    <div id="divSectionTwo" class="jg-green-gray container">
+        <!--begin section two-->
+        <!--might have issues centering-->
+        <div class="jg-center jg-green-gray row">
+            <article class="jg-inline-block jg-float-left">
+                <section class="col-md-8">
+                    Vivamus tincidunt eleifend dapibus. Sed ac tellus eleifend nisl aliquet eleifend. Aliquam consequat magna dapibus 
+                    mi dignissim euismod. Vestibulum finibus metus eu tortor sagittis, vitae ornare diam sagittis. Ut sit amet ipsum 
+                    aliquet, placerat nisi quis, interdum turpis. Pellentesque finibus quis lacus at viverra. Aenean maximus pellentesque 
+                    lorem ut interdum. Donec at arcu ut libero sollicitudin lobortis ut non dolor. Aliquam quis faucibus justo, eu porta 
+                    nulla. Curabitur tincidunt est nisi, non interdum metus ultrices vitae. Nulla facilisi. Aliquam erat volutpat.
+                </section>
+            </article>
+            <article class="jg-inline-block jg-float-right">
+                <section class="col-md-2 col-md-offset-1">
+                    Morbi tristique turpis et auctor finibus. Etiam vel nisl suscipit, interdum lorem quis, sollicitudin nunc.
+                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin molestie 
+                    libero ac quam vulputate, id hendrerit arcu dignissim. Proin sed pharetra ante. Cras sed vestibulum tellus. 
+                    Suspendisse eget faucibus risus, at fermentum lorem. Sed convallis at leo sed aliquam. Aenean semper, diam 
+                    vitae pellentesque lobortis, nisl arcu sollicitudin diam, sed vehicula ante nunc quis leo. Vestibulum at nisi 
+                    a urna euismod ornare. Cras placerat viverra luctus. Sed blandit lorem id est hendrerit varius. Class aptent 
+                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pellentesque quis odio 
+                    sed sagittis. Curabitur ut magna iaculis, feugiat nibh in, euismod urna. In lacinia pellentesque nulla sit 
+                    amet tempor.
+                </section>
+            </article>
+        </div> <!--end section two-->
+    </div>
+    <div>
+        <br />
+    </div>
+    <div id="divSectionThree" class="container-fluid row">
+        <!--begin section three-->
+                        <img src="http://m.c.lnkd.licdn.com/mpr/mpr/p/5/005/0b4/390/0d6d3b4.jpg" alt="Alternate Text" class="col-xs-6" />
+                    
+                        <img src="http://blog.seekdotnet.com/wp-content/uploads/2011/07/asp-net-web-hosting.jpg" alt="Alternate Text" class="col-xs-6" />
+    </div> <!--end section three-->
+    <div class="container-fluid">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            dhfjkhsdesfgswdfs
+                        </td>
+                        <td>
+                            jkholhioplsdfsdf
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>regrgsdfsdf</td>
+                        <td>kjghkjhljsdfsdfsdfk</td>
+                    </tr>
+                    <tr>
+                        <td>ewfsfsdefsedfgerw</td>
+                        <td>dsgrsdfsdfsdefgew</td>
+                    </tr>
+                    <tr>
+                        <td>ewfgewsdefdssfgsefgewsfgewsfsdefgrer</td>
+                        <td>fdghedsdfsdsdefsefgessefgeswfgfsdffghrd</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <form class="col-xs-6 col-xs-offset-3">
+            <div class="row">
+                <label class="col=xs=3">Email</label>
+                <div class="col-xs-9">
+                    <input class="form-control" placeholder="Email" />
+                </div>
+                </div>
+            <div class="form-group">
+                <select class="form-control">
+                    <option>Option1</option>
+                    <option>Option2</option>
+                    <option>Option3</option>
+                    <option>Option4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="button" class="btn btn-info jg-rigid" value="bootstrap" onclick="$('#divModal').modal('show')" />
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <div id="divCouresel" class="carousel slide">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#divCouresel" data-slide-to="0" class="active"></li>
+                    <li data-target="#divCouresel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <!--begin section three-->
+                    <div class="item active">
+                        <img src="http://m.c.lnkd.licdn.com/mpr/mpr/p/5/005/0b4/390/0d6d3b4.jpg" alt="Alternate Text" />
+                    </div>
+                    <div class="item">
+                        <img src="http://blog.seekdotnet.com/wp-content/uploads/2011/07/asp-net-web-hosting.jpg" alt="Alternate Text" />
+                    </div>
+                </div>
+                <span href="#divCouresel" class="carousel-control right" data-slide="next">
+                    <span class="icon-next"></span>
+                </span>
+                <span href="#divCouresel" class="carousel-control left" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <footer>&copy; Joshua's Layout</footer>
+    <!--industry standard to load javascript last in the body-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $("#divCouresel").carousel();
+    </script>
+
+</body>
+</html>

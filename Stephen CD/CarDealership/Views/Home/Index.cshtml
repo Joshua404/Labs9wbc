@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="CarApp" >
+
+<head>
+    <title></title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    
+    <link href="~/Content/SlateStyle.css" rel="stylesheet" />
+    <base href="/" />
+</head>
+
+
+<body ng-controller="CarListController as main">
+
+    <!-- begin nav menu -->
+    <div role="navigation" class="navbar navbar-default navbar-fixed-top" id="blah">
+        <div class="container">
+            <div class="navbar-header" dropdown is-open="status.isopen">
+                <button type="button" class="btn btn-success navbar-toggle btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled" data-toggle="collapse" data-target=".navbar-collapse" ng-init="navCollapsed = true"
+                        ng-click="navCollapsed = !navCollapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="brandbbb" class="navbar-brand" href="~/">
+                    Rich People DealerShip
+                </a>
+            </div>
+            <div id="menu" collapse="navCollapsed" class="navbar-collapse collapse navbar-responsive-collapse">
+                <ul id="menucenter" role="menu" class="nav navbar-nav navbar-center">
+                    <li class="nav">
+                        <a href="/listCar"> Home </a>
+                    </li>
+                    <li class="nav">
+                        <a href="/addCar"> Add Car </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- end nav menu -->
+    
+
+    @*<br />
+    <a href="/deleteCar"> Delete Car </a>
+    <br />
+    <a href="/editCar"> Edit Car </a>*@
+    
+    <div ng-view class="container-fluid"></div>
+
+
+    @*<div class="container">
+        <h2>Showroom</h2>
+        <table ng-cloak="true" class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>
+                        Make
+                    </th>
+                    <th>
+                        Model
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Picture
+                    </th>
+                    <th>
+                        Brief Description
+                    </th>
+                    <th>
+                        Full Description
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="car in main.cars">
+                    <td><a href="/deleteCar">Delete</a></td>
+                    <td><a href="/editCar">Edit</a></td>
+                    <td>{{car.Make}}</td>
+                    <td>{{car.Model}}</td>
+                    <td>{{car.Price|currency}}</td>
+                    <td><img ng-src="{{car.Picture}}" /></td>
+                    <td>{{car.BriefDescription}}</td>
+                    <td>{{car.FullDescription}}</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>*@
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-resource.min.js"></script>
+    <script src="~/Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="~/ngApps/app.js"></script>
+    <script src="~/ngApps/controllers.js"></script>
+    <script src="~/ngApps/services.js"></script>
+    <script src="~/Scripts/respond.min.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</body>
+</html>

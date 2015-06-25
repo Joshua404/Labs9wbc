@@ -1,0 +1,35 @@
+﻿<form ng-submit="main.addCar()">
+    <div class="container">
+
+        <div>         
+            <label> Make </label>
+            <input ng-model="main.newCar.make" />
+        </div>
+        <div>
+            <label> Model </label>
+            <input ng-model="main.newCar.model" />
+        </div>
+        <div>
+
+            <label> Price </label>
+            <input ng-model="main.newCar.price" />
+        </div>
+        <div>
+
+            <label> Picture </label>
+            <input ng-model="main.newCar.picture" />
+        </div>
+        <div>
+
+            <label> Brief Description </label>
+            <input ng-model="main.newCar.briefDescription" />
+        </div>
+        <div>
+
+            <label> Full Description </label>
+            <input ng-model="main.newCar.fullDescription" />
+        </div>
+
+        <input type="submit" value="Save" />
+    </div>
+</form>
